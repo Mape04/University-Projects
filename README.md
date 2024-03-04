@@ -1,0 +1,7 @@
+- 👋 Hi, I’m @Mape04.
+- 🏛️ Student at Babes Bolyai University (second year).
+- 👀 I’m interested in programming and IT.
+- 💻 Languages I have experience with: C++, Python, Java, HTML, CSS.
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me: mazilu.paulconstantin@gmail.com.
