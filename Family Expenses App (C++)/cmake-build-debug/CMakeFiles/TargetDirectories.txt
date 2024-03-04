@@ -1,0 +1,3 @@
+C:/Users/mazil/Documents/0_C++_Clion/Familie/cmake-build-debug/CMakeFiles/Familie.dir
+C:/Users/mazil/Documents/0_C++_Clion/Familie/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mazil/Documents/0_C++_Clion/Familie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
