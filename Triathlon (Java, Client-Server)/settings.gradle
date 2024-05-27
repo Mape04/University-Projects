@@ -1,0 +1,10 @@
+rootProject.name = 'TriathlonV2'
+include 'Client'
+include 'Model'
+include 'Networking'
+include 'Model'
+include 'Persistence'
+include 'Server'
+include 'Services'
+include 'RestServices'
+

@@ -1,0 +1,17 @@
+package jsonprotocol;
+
+
+public enum ResponseType {
+    OK,
+    ERROR,
+    UPDATE,
+    USER_LOGGED_IN,
+    USER_LOGGED_OUT,
+    GET_ALL_PARTICIPANTS,
+    GET_TOTAL_POINTS_BY_ID,
+    GET_REFEREE_BY_NAME,
+    GET_ALL_RESULTS,
+    GET_PARTICIPANT_BY_SSN,
+    ADD_RESULTS,
+    HAS_RESULT
+}

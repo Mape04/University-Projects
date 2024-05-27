@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'ro.mpp2024' //posibil sa puste aici
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "22"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
+    implementation project(':Model')
+    implementation project(':Services')
+    implementation project(':Networking')
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.7'
+
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.0'
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+    runtimeOnly 'org.xerial:sqlite-jdbc:3.45.1.0'
+}
+
+application {
+    mainClass = 'StartJsonClientFX'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar{
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes('Main-Class':'StartJsonClientFX')
+    }
+    from{
+        configurations.runtimeClasspath.collect{it.isDirectory() ? it : zipTree(it)}
+    }
+}
