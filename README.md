@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Mape04.
-- 🏛️ Student at Babes Bolyai University (second year).
+- 🏛️ Student at Babes Bolyai University (third year).
 - 👀 I’m interested in programming and IT.
 - 💻 Languages I have experience with: C/C++, C#, Python, Java, x86 Assembly, Bash, HTML, CSS.
 - 🌱 I’m currently learning ...
