@@ -1,7 +1,7 @@
 -- In this file you can write OCL constraints at the UML model level.
 -- You have below an example invariant showing you the OCL syntax used. 
 
-model NewModel
+model F1TeamModel
 
 -- --Example invariant
 --package SomePackage
@@ -13,4 +13,46 @@ model NewModel
 --
 --endpackage
 
+	  context Team
+	        -- A Team should have exactly 2 drivers
+			inv TwoDriversPerTeam: self.contract->collect(driver)->asSet()->size() = 2
+			inv TotalSalaryCap: self.salary <= (self.budget * 0.5)
+	
+	
+	  context EngineSupplier
+	        -- The engine supplier should have a reliability(0.0 - 1.0) score greater than 0.7
+			inv ReliableEngines: self.reliabilityScore > 0.7
+
+
+	  context Engineer
+	        -- A engineer should only be assigned to one team.
+			inv SingleTeam: self.team->size() = 1
+			    
+			    
+	  context Driver
+	        -- A driver should have a minimum experience of 3 years.
+			inv MinimumExperience: self.experience >= 3
+			inv Age: self.age >= 18
+			inv Dates: self.dateOfBirth.year >=1980
+			    
+	
+	
+	  context Contract
+	        -- A driver cannot have more than one active contract with the same team.
+	        inv OneContract: Contract.allInstances()->select(c | c.driver = self.driver and c.team = self.team)->size() = 1
+	            
+	        -- A contract's salary must not exceed 20% of the team's budget
+			inv SalaryWithinBudget: self.salary <= (self.team.budget * 0.2)
+
+	        -- This ensures the startDate is before or equal to the endDate in the Contract
+	        inv: startDate.year < endDate.year or
+     			(startDate.year = endDate.year and 
+      			(startDate.month < endDate.month or 
+      			(startDate.month = endDate.month and startDate.day <= endDate.day)))
+      			
+      		--Contract duration must be at least one year
+      		inv MinimumContractDuration: 
+    			self.endDate.year - self.startDate.year >= 1    
+    		
+    	 
 endmodel
