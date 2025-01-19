@@ -1,0 +1,263 @@
+.container {
+    /* Set the background image */
+    background-image: url('vecteezy_ai-generated-a-gym-with-dark-exercise-equipment_37170421.jpg');
+
+    /* Make sure the image covers the whole screen */
+    background-size: cover;
+    background-position: center;
+
+    /* Ensure the background stays fixed during scrolling */
+    background-attachment: fixed;
+
+    /* Optional: Set the height to cover the full viewport */
+    min-height: 100vh;
+
+    /* Optional: You can set other styles like color for text */
+    color: white;  /* Adjust text color for contrast */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.formSection {
+    width: 45%;
+    background-color: rgba(31, 31, 31, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tableSection {
+    width: 50%;
+    background-color: rgba(31, 31, 31, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header, h2 {
+    color: #80cbc4;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input:focus {
+    border-color: #80cbc4;
+    outline: none;
+}
+
+.button {
+    background-color: #80cbc4;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4db6ac;
+}
+
+.ctaButton {
+    background-color: #80cbc4;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+    background-color: #4db6ac;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+.table th {
+    background-color: #333333;
+    border-bottom: 2px solid #444444;
+}
+
+.table td {
+    background-color: #1c1c1c;
+}
+
+.table tr:hover {
+    background-color: #333333;
+}
+
+.table .editButton, .table .deleteButton {
+    background-color: #80cbc4;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.table .editButton:hover {
+    background-color: #4db6ac;
+}
+
+.table .deleteButton {
+    background-color: #ff5252;
+}
+
+.table .deleteButton:hover {
+    background-color: #e53935;
+}
+
+.error {
+    color: #ff5252;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formSection,
+    .tableSection {
+        width: 90%;
+    }
+
+    .header, h2 {
+        font-size: 20px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px;
+    }
+
+    .ctaButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .formSection,
+    .tableSection {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header, h2 {
+        font-size: 18px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+    }
+
+    .ctaButton {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .table .editButton, .table .deleteButton {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .formSection,
+    .tableSection {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .header, h2 {
+        font-size: 16px;
+    }
+
+    .input {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+    }
+
+    .ctaButton {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .table .editButton, .table .deleteButton {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}

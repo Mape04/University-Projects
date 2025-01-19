@@ -1,0 +1,213 @@
+/* Container for the workouts section */
+.workouts {
+    /*background-color: rgba(28, 28, 28, 0.88); !* Dark background *!*/
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    position: absolute;
+    background-image: url("workouts.jpg");
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Avoids tiling */
+    z-index: -1;
+    color: #e0e0e0; /* Light text for readability */
+}
+
+.workouts-container{
+    padding: 20px;
+    margin: 20px;
+    background: rgba(18, 18, 18, 0.78);
+    border-radius: 10px;
+}
+
+/* Each individual workout box */
+.workout-container {
+    background-color: #292929; /* Slightly lighter dark background */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Header of each workout (expandable area) */
+.workout-header {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0.70); /* Darker gray */
+    padding: 10px;
+    border-bottom: 1px solid #444444; /* Subtle border for separation */
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.workout-header:hover {
+    background-color: #444444; /* Highlight on hover */
+}
+
+.workout-header h2 {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+/* Details of the workout when expanded */
+.workout-details {
+    padding: 15px;
+    background-color: rgb(37, 37, 37); /* Slightly darker shade for contrast */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Each exercise item in the expanded workout */
+.exercise-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.exercise-item {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: rgba(51, 51, 51); /* Darker gray for items */
+    border-radius: 5px;
+    border-bottom: 1px solid #444444;
+}
+
+.exercise-item:last-child {
+    border-bottom: none;
+}
+
+.exercise-item strong {
+    color: #80cbc4; /* Teal accent for key details */
+}
+
+/* Message for when no exercises are available */
+.no-exercises-message {
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+/* Message when no workouts are available */
+.no-workouts-message {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 18px;
+}
+
+/* Text area for notes */
+.notes-textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Save notes button */
+.save-notes-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #80cbc4; /* Accent color */
+    color: #121212; /* Dark text for contrast */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-notes-button:hover {
+    background-color: #4caf50; /* Slightly darker accent */
+}
+
+/* Add workout button */
+.add-workout-button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #80cbc4; /* Accent color */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-workout-button:hover {
+    background-color: #4caf50; /* Slightly darker accent */
+}
+
+/* Inputs for adding exercises */
+.exercise-input {
+    margin: 5px 5px 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Add exercise button */
+button {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #80cbc4; /* Accent color */
+    color: #121212; /* Dark text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.delete-exercise-button{
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 2px 2px 5px 5px;
+    font-size: 14px;
+    background-color: #80cbc4; /* Accent color */
+    color: #121212; /* Dark text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-workout-button{
+    display: inline-block;
+    padding: 8px 15px;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: #80cbc4; /* Accent color */
+    color: #121212; /* Dark text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #4caf50; /* Slightly darker accent */
+}
+
+/* No workouts message */
+.no-workouts-message {
+    text-align: center;
+    color: #bbbbbb;
+    margin-top: 20px;
+}
+
+/* Scrollbar for exercise list */
+.exercise-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.exercise-list::-webkit-scrollbar-thumb {
+    background-color: #444444;
+    border-radius: 4px;
+}
+
+.exercise-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}

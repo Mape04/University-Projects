@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: light dark;
+
+    /*background-image: url("../../public/vecteezy_ai-generated-a-gym-with-dark-exercise-equipment_37170421.jpg");*/
+    background-position: center;
+    background-size: cover; /* This makes sure the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+

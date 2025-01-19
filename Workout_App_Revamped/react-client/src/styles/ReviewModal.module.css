@@ -1,0 +1,97 @@
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Modal Styling */
+.modal {
+    background: #2a2a2a; /* Dark background for modal */
+    color: white; /* White text for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Ensure it's not too wide */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Modal Heading */
+.modal h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #80cbc4; /* Accent color for the heading */
+    font-weight: 600;
+}
+
+/* Input Fields */
+.modal input, .modal textarea {
+    width: 90%;
+    background-color: #333; /* Darker input fields */
+    color: white;
+    border: 1px solid #555; /* Subtle border for inputs */
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Input Fields Focus Effect */
+.modal input:focus, .modal textarea:focus {
+    background-color: #444; /* Lighter dark background when focused */
+    border-color: #80cbc4; /* Accent color when focused */
+    outline: none; /* Remove default outline */
+}
+
+/* Disable resizing of textarea */
+.modal textarea {
+    resize: none; /* Disables the resizing by dragging */
+}
+
+/* Button Styles */
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Buttons with Hover Effects */
+.modalButtons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #80cbc4; /* Accent color for buttons */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effects */
+.modalButtons button:hover {
+    background-color: #80cbc4; /* Darker accent color on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Button Cancel */
+.modalButtons button:nth-child(2) {
+    background-color: #555; /* Darker background for cancel button */
+}
+
+.modalButtons button:nth-child(2):hover {
+    background-color: #444; /* Slightly lighter dark color on hover */
+}
+
+/* Modal Close Button */
+.modalButtons button:focus {
+    outline: none; /* Remove outline when focused */
+}

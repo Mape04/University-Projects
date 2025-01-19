@@ -1,0 +1,115 @@
+/* Auth */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95.8vh;
+    background-image: url("../../public/auth_bg.jpg");
+    background-position: center;
+    background-size: cover; /* This makes sure the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    padding: 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 400px; /* Restricting maximum width */
+    background: rgba(31, 31, 31, 0.95); /* Dark background for the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.auth-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ecf0f1; /* Light text for dark background */
+}
+
+.auth-inputs {
+    margin-bottom: 20px;
+    width: 100%; /* Ensures inputs do not exceed the box width */
+    display: flex; /* Allows control over child alignment */
+    justify-content: center; /* Center alignment */
+}
+
+.auth-inputs input {
+    width: calc(100% - 20px); /* Adjust width to stay within box padding */
+    max-width: 360px; /* Ensures consistent alignment with the button */
+    padding: 12px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ecf0f1; /* Light text for inputs */
+    background-color: #333; /* Dark background for input */
+    transition: all 0.3s ease;
+}
+
+.auth-inputs input:focus {
+    border-color: #3498db; /* Accent color for focus */
+    background-color: #444; /* Darker background on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #3498db, #2980b9); /* Blue gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.auth-btn:hover {
+    background: linear-gradient(90deg, #2980b9, #2471a3); /* Slightly darker gradient */
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.5);
+}
+
+.auth-switch {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #7f8c8d; /* Light gray for the text */
+}
+
+.auth-switch a {
+    color: #3498db; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.auth-switch a:hover {
+    color: #2980b9; /* Darker blue for hover effect */
+    text-decoration: underline;
+}
+
+/* Adding subtle animations */
+.auth-box {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

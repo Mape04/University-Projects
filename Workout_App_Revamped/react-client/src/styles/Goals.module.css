@@ -1,0 +1,138 @@
+.container {
+    display: flex; /* Flexbox layout to align children horizontally */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    position: absolute;
+    background-image: url('goals.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Avoids tiling */
+    z-index: -1;
+}
+
+.goalsContainer {
+    flex: 1; /* Allows it to take up all remaining space */
+    padding: 20px;
+    margin: 20px;
+    background: rgba(18, 18, 18, 0.78);
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.goalForm {
+    margin-bottom: 30px;
+}
+
+.goalForm input,
+.goalForm button {
+    padding: 8px;
+    margin: 5px;
+}
+
+.goalCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.goalCard {
+    background-color: rgba(51, 51, 51, 0.88);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.goalCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.goalCard h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.goalCard p {
+    margin: 5px 0;
+}
+
+.goalButtons button {
+    background-color: #80cbc4;
+    color: #121212;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+    padding: 8px 12px;
+}
+
+.goalButtons button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.statisticsContainer {
+    width: 25%; /* Fixed width for statistics container */
+    min-width: 200px; /* Ensures it doesn't shrink too much on smaller screens */
+    padding: 20px;
+    margin: 20px;
+    background: rgba(18, 18, 18, 0.78);
+    text-align: center;
+    box-sizing: border-box; /* Includes padding in width */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+    }
+
+    .statisticsContainer {
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Margin adjustments for vertical stacking */
+    }
+
+    .goalsContainer {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.modalButtons button {
+    margin: 5px;
+}
