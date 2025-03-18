@@ -13,6 +13,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
+
 public class ChallengeDBRepository implements IChallengeRepository {
     private JdbcUtils dbUtils;
 

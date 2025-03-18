@@ -51,6 +51,7 @@ public class Challenge extends Entity<Integer>{
     public String toString() {
         return "Domain.Challenge{" +
                 "Id=" + Id +
+                ", Name=" + Name +
                 ", Date=" + Date +
                 '}';
     }

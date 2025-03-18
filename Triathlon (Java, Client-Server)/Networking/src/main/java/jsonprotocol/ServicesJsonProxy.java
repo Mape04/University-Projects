@@ -42,11 +42,11 @@ public class ServicesJsonProxy implements IService {
     public ServicesJsonProxy(String host, int port) {
         this.host = host;
         this.port = port;
-        gsonFormatter = new Gson();
-//        gsonFormatter = new GsonBuilder()
-//                .registerTypeAdapter(RequestType.class, new EnumOrdinalTypeAdapter<>(RequestType.class))
-//                .registerTypeAdapter(java.sql.Date.class, new SqlDateAdapter())
-//                .create();
+        //gsonFormatter = new Gson();
+        gsonFormatter = new GsonBuilder()
+                .registerTypeAdapter(RequestType.class, new EnumOrdinalTypeAdapter<>(RequestType.class))
+                .registerTypeAdapter(java.sql.Date.class, new SqlDateAdapter())
+                .create();
         qresponses = new LinkedBlockingQueue<>();
     }
 
@@ -147,7 +147,7 @@ public class ServicesJsonProxy implements IService {
     }
 
     private void sendRequest(Request request) throws ServicesException {
-        String reqLine = gsonFormatter.toJson(request);
+        String reqLine = gsonFormatter.toJson(request, Request.class);
         try {
             output.println(reqLine);
             output.flush();

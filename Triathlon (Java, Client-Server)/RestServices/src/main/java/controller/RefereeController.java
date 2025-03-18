@@ -57,12 +57,21 @@ public class RefereeController {
 
     }
     // @CrossOrigin(origins = "http://localhost:3000")
-    @RequestMapping(value="/{username}", method= RequestMethod.DELETE)
-    public ResponseEntity<?> delete(@PathVariable String username){
-        System.out.println("Deleting user ... "+username);
-        userRepository.delete(userRepository.getRefereeByName(username));
-        return new ResponseEntity<Referee>(HttpStatus.OK);
+//    @RequestMapping(method= RequestMethod.DELETE)
+//    public ResponseEntity<?> delete(@RequestBody Referee referee){
+//        System.out.println("Deleting user ... "+ referee);
+//        userRepository.delete(referee);
+//        return new ResponseEntity<Referee>(HttpStatus.OK);
+//    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> delete(@PathVariable Integer id){
+        System.out.println("Deleting user ... " + id);
+        Referee referee = userRepository.findById(id);
+        userRepository.delete(referee);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
+
 
 
     @RequestMapping("/{user}/name")

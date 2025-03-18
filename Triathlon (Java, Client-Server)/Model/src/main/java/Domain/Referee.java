@@ -70,6 +70,7 @@ public class Referee extends Entity<Integer> {
                 "Id=" + Id +
                 ", Name='" + Name + '\'' +
                 ", Password='" + Password + '\'' +
+                ", Challenge=' " + Challenge + '\'' +
                 '}';
     }
 }

@@ -15,10 +15,13 @@ public class StartRestClient {
 
     public static void main(String[] args) {
 
-        Challenge challenge = new Challenge("Test", Date.valueOf(LocalDate.now()));
-        Referee userT=new Referee("test2024nou","133",challenge);
+        Challenge challenge = new Challenge("Inot", Date.valueOf("1999-03-03"));
+        challenge.setId(1);
+        Referee userT= new Referee("test2024nou","133",challenge);
+        //increment this
+        userT.setId(31);
         try{
-            System.out.println("Adding a new user "+userT);
+            System.out.println("Adding a new user "+ userT);
             show(()-> System.out.println(refereesClient.create(userT)));
             System.out.println("\nPrinting all users ...");
             show(()->{
@@ -35,7 +38,7 @@ public class StartRestClient {
         show(()-> System.out.println(refereesClient.getById("1")));
 
         System.out.println("\nDeleting user with id="+userT.getId());
-        //show(()-> refereesClient.delete(userT.getId()));
+        show(()-> refereesClient.delete(userT.getId()));
     }
 
     private static void show(Runnable task) {

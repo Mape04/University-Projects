@@ -28,7 +28,7 @@ public class ChallengeHRepository implements IChallengeRepository {
         logger.traceEntry("Finding challenge by name {} ", name);
         Challenge challenge = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
-            challenge = session.createQuery("FROM Challenge WHERE name = :name", Challenge.class)
+            challenge = session.createQuery("FROM Challenge WHERE Name = :name", Challenge.class)
                     .setParameter("name", name)
                     .uniqueResult();
         } catch (Exception e) {

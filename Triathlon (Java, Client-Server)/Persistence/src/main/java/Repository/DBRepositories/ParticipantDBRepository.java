@@ -15,6 +15,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
+
 public class ParticipantDBRepository implements IParticipantRepository {
 
     private JdbcUtils dbUtils;
