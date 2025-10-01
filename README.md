@@ -1,3 +1,3 @@
 - 👋 Hi, I’m @Mape04.
-- 🏛️ Student at Babes Bolyai University (third year).
+- 🏛️ Studied at Babes Bolyai University.
 - 📫 How to reach me: mazilu.paulconstantin@gmail.com.
