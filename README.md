@@ -11,7 +11,7 @@ I’d like to give you a quick rundown of each project to (hopefully) save you s
 
 ---
 
-### 🧾 Family Expenses App & Library
+### 🧾 [Family Expenses App](https://github.com/Mape04/University-Projects/tree/main/Family%20Expenses%20App%20(C%2B%2B)) & Library
 
 Focused on **OOP principles**, understanding the **MVC structure**, learning about **TDD**, and parsing different types of files.  
 All of this helped me develop a solid grasp of programming fundamentals and become more confident with the language.
