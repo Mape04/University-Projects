@@ -1,3 +1,2 @@
-- 👋 Hi, I’m @Mape04.
-- 🏛️ Studied at Babes Bolyai University.
-- 📫 How to reach me: mazilu.paulconstantin@gmail.com.
+Here you cand find some of the projects that I've made so far.
+I think they are not that complicated, but it's honest work :)
