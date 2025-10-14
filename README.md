@@ -1,12 +1,45 @@
-Welcome to the repository that houses most of my journey through my university years.
-Here, you can see the growth of my programming skills — from simple command-line programs all the way to full-stack applications.
+# 🎓 My University Programming Journey
 
-I’ll give you a basic rundown of each project to save you some time (hopefully):
+Welcome to the repository that showcases much of my journey throughout my university years.<br>  
+Here, you can explore the progression of my programming skills — from simple command-line programs to fully developed full-stack applications.
 
-The Family Expenses App and Library projects are focused on OOP principles, understanding the basic MVC structure, learning about TDD, and parsing different types of files. All of this helped me build a solid grasp of programming fundamentals and become familiar with the language.
+---
 
-The Scheduler App was the first time I used JavaFX for the GUI and SQLite as a database for storing information instead of simple files. I also became more comfortable using IntelliJ IDEA and discovered some of the built-in features of the IDE.
+## 🧭 Overview
 
-Triathlon is where I connected the backend to the frontend and started to see how everything ties together. I also learned to work with APIs, understood the importance of DTOs, and gained experience in frontend programming with React.
+I’d like to give you a quick rundown of each project to (hopefully) save you some time:
 
-While working on Workout_App, I learned more about frontend development and UI/UX design, focusing on writing code that is both readable and maintainable.
+---
+
+### 🧾 Family Expenses App & Library
+
+Focused on **OOP principles**, understanding the **MVC structure**, learning about **TDD**, and parsing different types of files.  
+All of this helped me develop a solid grasp of programming fundamentals and become more confident with the language.
+
+---
+
+### 🗓️ Scheduler App
+
+Marked the first time I used **JavaFX** for the GUI and **SQLite** as a database for storing information instead of simple files.  
+During this project, I became more comfortable using **IntelliJ IDEA** and discovered several of the IDE’s built-in features.
+
+---
+
+### 🏊 Triathlon
+
+This is where I connected the **backend** to the **frontend** and began to see how everything comes together.  
+I also learned how to work with **APIs**, understood the importance of **DTOs**, and gained hands-on experience in frontend programming with **React**.
+
+---
+
+### 💪 Workout_App
+
+While working on **Workout_App**, I deepened my understanding of **frontend development** and **UI/UX design**,  
+focusing on writing code that is both readable and maintainable.
+
+---
+
+## 🌱 What This Repository Represents
+
+This repository highlights my **growth, curiosity, and continuous learning** throughout university.  
+Each project reflects a milestone in my journey toward becoming a well-rounded software developer.
