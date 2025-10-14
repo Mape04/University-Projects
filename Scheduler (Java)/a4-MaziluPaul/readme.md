@@ -3,8 +3,7 @@
 ## 💡 About the App
 
 This application is a **scheduler for a doctor’s office**, designed to efficiently manage patients and their appointments.  
-It allows adding, updating, deleting, and viewing appointments.
-
+It allows adding, updating, deleting, and viewing appointments, while also providing detailed reports about scheduling trends and activity over time.
 
 The main purpose of this app is to demonstrate an understanding of:
 - **OOP principles and layered architecture (UI → Service → Repository → Domain)**
