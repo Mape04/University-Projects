@@ -10,8 +10,8 @@ It allows adding, updating, deleting, and viewing appointments, while also provi
 The main purpose of this app is to demonstrate an understanding of:
 - **OOP principles and layered architecture (UI → Service → Repository → Domain)**
 - **Connecting JavaFX with SQL databases**
-- **Data persistence, reporting, and stream processing in Java** ![](src/main/java/Service/Service.java)
-- **Switching between repository types (in-memory, file-based, SQL, NoSQL)** via a configuration file   ![](settings.properties)
+- **Data persistence, reporting, and stream processing in Java** [](src/main/java/Service/Service.java)
+- **Switching between repository types (in-memory, file-based, SQL, NoSQL)** via a configuration file   [](settings.properties)
 - **Launching the app either via Command Line or GUI**, based on the settings file
 
 ![App Screenshot](images/consoleUI.png)
