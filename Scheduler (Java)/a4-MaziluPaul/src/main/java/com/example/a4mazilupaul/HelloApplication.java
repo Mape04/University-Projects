@@ -190,7 +190,7 @@ public class HelloApplication extends Application {
         patientButtonsHorizontalBox.getChildren().add(updatePatientButton);
 
 
-        /// ---------------- GUI Programari ----------------------
+        /// ---------------- GUI ----------------------
         VBox appointmentsVerticalBox = new VBox();
         appointmentsVerticalBox.setPadding(new Insets(10));
         mainHorizontalBox.getChildren().add(appointmentsVerticalBox);
