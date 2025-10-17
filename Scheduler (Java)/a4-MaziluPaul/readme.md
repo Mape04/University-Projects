@@ -14,6 +14,10 @@ The main purpose of this app is to demonstrate an understanding of:
 - **Switching between repository types (in-memory, file-based, SQL, NoSQL)** via a configuration file  
 - **Launching the app either via Command Line or GUI**, based on the settings file
 
+![App Screenshot](images/consoleUI.png)
+
+![App Screenshot](images/repositoryChange.png)
+
 ---
 
 ## ✨ Key Features
